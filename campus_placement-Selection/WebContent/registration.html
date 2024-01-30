@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+       
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    </head>
+<body>
+<center><h2>Registration</h2></center>
+ <form action="reg" method="post">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="fname" required>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required>
+
+        <button type="submit" class="btn btn-success">Register</button>&emsp;&emsp;
+          <button type="button" class="btn btn-primary"><a href="loginjsp.jsp" style="color: white; text-decoration: none;">
+  Login</button>   </form>
+
+</body>
+</html>

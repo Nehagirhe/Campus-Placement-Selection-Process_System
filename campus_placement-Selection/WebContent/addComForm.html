@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+ <h4 style='text-align: center;'>***Add Company***</h4>
+ <hr>
+    <div class="container" style='background-color: #b5dfcf; padding: 15px'>
+        <form action="addcompany.jsp" method="post" >
+            <div class="form-group">
+                <label for="categoryName">NAME</label>
+                <input type="text" class="form-control" id="categoryName" placeholder="Enter Company Name" name="cname">
+            </div>
+             <div class="form-group">
+                <label for="cemail">EMAIL</label>
+                <input type="email" class="form-control" id="cemail" placeholder="Enter Email" name="cemail">
+            </div>
+             <div class="form-group">
+                <label for="cno">CONTACT NUMBER</label>
+                <input type="text" class="form-control" id="cno" placeholder="Enter number" name="cno">
+            </div>
+             <div class="form-group">
+                <label for="website">WEBSITE</label>
+                <input type="text" class="form-control" id="website" placeholder="Enter Website" name="website">
+            </div>
+            <div class="form-group">
+	<label for="city">City</label>
+           <select class="form-control" id="city" name="city" >
+            <option value="city1">---Select---</option>
+            <option value="city2">Pune</option>
+          <option value="city3">Indore</option>
+     <option value="city4">Mumbai</option>
+	</select>
+	</div>
+	 <div class="form-group">
+	<label for="state">STATE</label>
+           <select class="form-control" id="state" name="state" >
+            <option value="city1">---Select---</option>
+            <option value="city2">Karnataka</option>
+          <option value="city3">Madhya Pradesh</option>
+     <option value="city4">Maharashtra</option>
+	</select>
+	</div>
+            <div class="form-group">
+                <label for="address">ADDRESS</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="description">DESCRIPTION</label>
+                <textarea class="form-control" id="description" rows="3" name="description"></textarea>
+            </div>
+          <!--   <div class="form-group">
+                <label for="startDate">Start Date and Time</label>
+                <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date and Time</label>
+                <input type="datetime-local" class="form-control" id="endDate" name="endDate">
+            </div>  
+            <div class="form-group">
+                <label for="picture">COMPANY LOGO</label>
+                <input type="file" class="form-control-file" id="picture" name="logo">
+            </div> -->
+              <button type="submit" class="btn btn-primary">Add Company</button>
+            
+           <a href='logof.jsp' class='btn btn-primary'>Next</a>          
+        </form>
+    </div>
+</body>
+</html>
